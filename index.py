@@ -15,7 +15,7 @@ from sendgrid.helpers.mail import Mail
 app = Flask(__name__)
 
 #cargamosla informacion de nuestro archivo config.json
-f = open("apinotificaciones/config.json","r")
+f = open("config.json","r")
 env = json.loads(f.read())
 
 @app.route('/', methods=['GET'])
